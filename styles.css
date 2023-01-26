@@ -33,18 +33,18 @@ body{
     flex-direction: column;
     gap: 16px;
     margin: 0 8px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .sidebar .logo{
+    display: flex;
     flex-direction: row;
     font-size: 1.6rem;
     align-items: center;
     gap: 16px;
-    margin: 0;
 }
 
-.sidebar > div > div {
+.sidebar > div > a {
     display: flex;
     gap: 20px;
     align-items: center;
