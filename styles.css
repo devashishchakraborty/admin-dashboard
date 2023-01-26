@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
 html, body{
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -15,19 +19,40 @@ body{
 
 .sidebar{
     color: white;
+    padding: 16px;
     font-weight: bold;
-    font-size: 2rem;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
     background-color: #1992d4;
+    gap: 48px;
+}
+
+.sidebar > div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 8px;
+    font-size: 1.2rem;
 }
 
 .sidebar .logo{
-    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
+    margin: 0;
+}
+
+.sidebar > div > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
 }
 
 .dashboard{
