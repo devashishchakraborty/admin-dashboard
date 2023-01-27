@@ -12,6 +12,10 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     display: flex;
     height: 100%;
@@ -54,9 +58,63 @@ body{
 
 .sidebar a {
     color: white;
-    text-decoration: none;
 }
 
 .dashboard{
+    display: flex;
+    flex-direction: column;
     flex: 5;
+}
+
+.dashboard .header{
+    flex: 1;
+    padding: 16px 32px;
+}
+
+.dashboard .main{
+    flex: 5;
+}
+
+.header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header .searchbar{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex: 4;
+}
+
+.searchbar .search-icon, .profile .bell-icon{
+    height: 1.4em;
+    width: 1.4em;
+}
+
+.searchbar input.search{
+    border: none;
+    border-radius: 16px;
+    background-color: #e2e8f0;
+    height: 24px;
+    width: 100%;
+}
+
+.top-header .usericon{
+    height: 36px;
+    width: 36px;
+}
+
+.top-header .profile{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.profile a{
+    font-weight: bold;
+    color: black;
 }
