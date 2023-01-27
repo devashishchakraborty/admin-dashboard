@@ -64,11 +64,17 @@ a{
     display: flex;
     flex-direction: column;
     flex: 5;
+    background-color: #e2e8f0;
 }
 
 .dashboard .header{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 40px;
+    gap: 24px;
     flex: 1;
-    padding: 16px 32px;
+    background-color: white;
+    box-shadow: 1px 3px 3px #c8c8c8;
 }
 
 .dashboard .main{
@@ -79,6 +85,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .top-header .searchbar{
@@ -112,10 +119,53 @@ a{
     gap: 20px;
     flex: 2;
     justify-content: flex-end;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .profile a{
     font-weight: bold;
     color: black;
+}
+
+.header .bottom-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-header .current-user{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.current-user .username{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.current-user div:first-child{
+    font-size: 0.8rem;
+}
+
+.bottom-header .usericon{
+    height: 64px;
+    width: 64px;
+}
+
+.bottom-header .action-buttons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.action-buttons .btn{
+    background-color: #1992d4;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 90px;
 }
