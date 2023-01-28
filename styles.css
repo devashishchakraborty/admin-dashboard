@@ -143,6 +143,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 4px;
+    font-size: 1.2rem;
 }
 
 .current-user div:first-child{
@@ -150,8 +151,8 @@ a{
 }
 
 .bottom-header .usericon{
-    height: 64px;
-    width: 64px;
+    height: 60px;
+    width: 60px;
 }
 
 .bottom-header .action-buttons{
@@ -168,4 +169,31 @@ a{
     font-weight: bold;
     height: 30px;
     width: 90px;
+}
+
+.dashboard .main{
+    display: flex;
+    gap: 10px;
+    padding: 24px 20px;
+}
+
+.main .section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .section .section-title{
+    font-weight: bold;
+}
+
+.main .projects .section-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.project-actions svg{
+    height: 1rem;
+    width: 1rem;
 }
