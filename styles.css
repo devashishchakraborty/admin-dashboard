@@ -273,11 +273,19 @@ a{
 }
 
 .project-actions svg{
-    height: 1rem;
-    width: 1rem;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.project .project-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
 }
 
 .section-content .project{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 24px;
     border-left: 6px solid blueviolet;
@@ -292,4 +300,5 @@ a{
 .project .content-preview{
     color: #636363;
     font-size: 0.8rem;
+    flex: 1;
 }
