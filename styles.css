@@ -202,6 +202,32 @@ a{
     grid-column: 2 / -1;
 }
 
+.trending .section-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.trending .trend{
+    display: flex;
+    gap: 16px;
+}
+
+.trending .trend div{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 2px;
+    justify-content: center;
+}
+
+.trend .info{
+    color: #636363;
+}
+
 .trending .trend img{
     height: 2.4rem;
     width: 2.4rem;
@@ -266,9 +292,4 @@ a{
 .project .content-preview{
     color: #636363;
     font-size: 0.8rem;
-}
-
-.trending .trend{
-    display: flex;
-    gap: 16px;
 }
