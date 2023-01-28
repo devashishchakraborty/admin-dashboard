@@ -18,7 +18,7 @@ a{
 
 .container{
     display: flex;
-    height: minmax(100%, auto);
+    min-height: 100%;
 }
 
 .sidebar{
@@ -172,7 +172,9 @@ a{
 }
 
 .dashboard .main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
     padding: 24px 20px;
 }
@@ -187,10 +189,30 @@ a{
     font-weight: bold;
 }
 
+.main .projects{
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+.main .announcements{
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+}
+
+.main .trending{
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+}
+
+.trending .trend img{
+    height: 64px;
+    width: 64px;
+}
+
 .main .projects .section-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 180px);
+    grid-template-rows: repeat(3, 1fr);
     gap: 24px;
 }
 
