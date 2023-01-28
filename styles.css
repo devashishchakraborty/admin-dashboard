@@ -77,10 +77,6 @@ a{
     box-shadow: 1px 3px 3px #c8c8c8;
 }
 
-.dashboard .main{
-    flex: 5;
-}
-
 .header .top-header{
     display: flex;
     align-items: center;
@@ -173,9 +169,10 @@ a{
 
 .dashboard .main{
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 7fr 3fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    column-gap: 20px;
+    row-gap: 32px;
     padding: 24px 20px;
 }
 
@@ -186,6 +183,7 @@ a{
 }
 
 .main .section .section-title{
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -205,8 +203,8 @@ a{
 }
 
 .trending .trend img{
-    height: 64px;
-    width: 64px;
+    height: 2.4rem;
+    width: 2.4rem;
 }
 
 .main .projects .section-content{
@@ -214,6 +212,38 @@ a{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 24px;
+}
+
+.announcements .section-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.announcements .section-content .announcement{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    justify-content: center;
+}
+
+.announcement + .announcement{
+    padding-top: 12px;
+    border-top: 1px solid #d2d2d2;
+}
+
+.announcements .section-content .announcement .title{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.announcements .section-content .announcement .content{
+    color: #636363;
+    font-size: 0.7rem;
 }
 
 .project-actions svg{
@@ -234,6 +264,11 @@ a{
 }
 
 .project .content-preview{
-    color: #646464;
+    color: #636363;
     font-size: 0.8rem;
+}
+
+.trending .trend{
+    display: flex;
+    gap: 16px;
 }
